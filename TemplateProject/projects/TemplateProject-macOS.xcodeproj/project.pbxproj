@@ -1812,9 +1812,6 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					4F20EEC8132C69FE0030E34C = {
-						DevelopmentTeam = 686EDA2T8T;
-					};
 					4F39075F2013EBA300DDA490 = {
 						CreatedOnToolsVersion = 9.2;
 						DevelopmentTeam = 686EDA2T8T;
@@ -1828,10 +1825,6 @@
 							};
 						};
 					};
-					4F3AE17812C0E5E2001FD7A4 = {
-						DevelopmentTeam = "$(DEVELOPMENT_TEAM)";
-						ProvisioningStyle = Automatic;
-					};
 					4F3EE1BA231438D000004786 = {
 						DevelopmentTeam = 686EDA2T8T;
 						ProvisioningStyle = Automatic;
@@ -1844,15 +1837,10 @@
 					4F78DAF113B643600032E0F3 = {
 						DevelopmentTeam = 686EDA2T8T;
 					};
-					4F9828AA140A9EB700F3FCC1 = {
-						DevelopmentTeam = 686EDA2T8T;
-					};
 					4FB600121567CB0A0020189A = {
 						DevelopmentTeam = 686EDA2T8T;
 					};
 					4FD16A0813B63081001D0217 = {
-						DevelopmentTeam = 686EDA2T8T;
-						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 0;
@@ -2664,6 +2652,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 				DSTROOT = "$(VST2_PATH)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(EXTRA_PLUGIN_DEFS)",
@@ -2683,6 +2673,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 				DSTROOT = "$(VST2_PATH)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(EXTRA_PLUGIN_DEFS)",
@@ -2702,6 +2694,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 				DSTROOT = "$(VST2_PATH)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(EXTRA_PLUGIN_DEFS)",
@@ -2848,6 +2842,8 @@
 		4F3AE1DD12C0E5E2001FD7A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				DSTROOT = "$(AU_PATH)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2876,6 +2872,8 @@
 		4F3AE1DE12C0E5E2001FD7A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				DSTROOT = "$(AU_PATH)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2904,6 +2902,8 @@
 		4F3AE1DF12C0E5E2001FD7A4 /* Tracer */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				DSTROOT = "$(AU_PATH)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3231,6 +3231,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 				DSTROOT = "$(VST3_PATH)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(EXTRA_PLUGIN_DEFS)",
@@ -3253,6 +3255,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 				DSTROOT = "$(VST3_PATH)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(EXTRA_PLUGIN_DEFS)",
@@ -3275,6 +3279,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 				DSTROOT = "$(VST3_PATH)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(EXTRA_PLUGIN_DEFS)",
@@ -3303,6 +3309,7 @@
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
 				CLANG_WARN__EXIT_TIME_DESTRUCTORS = NO;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(AAX_PATH)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -3365,6 +3372,7 @@
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
 				CLANG_WARN__EXIT_TIME_DESTRUCTORS = NO;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -3437,6 +3445,7 @@
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
 				CLANG_WARN__EXIT_TIME_DESTRUCTORS = NO;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -3504,7 +3513,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "TemplateProject-macOS";
 				CODE_SIGN_ENTITLEMENTS = "TemplateProject-macOS.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				DSTROOT = "$(APP_PATH)";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3534,7 +3545,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "TemplateProject-macOS";
 				CODE_SIGN_ENTITLEMENTS = "TemplateProject-macOS.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				DSTROOT = "$(APP_PATH)";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3564,7 +3577,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "TemplateProject-macOS";
 				CODE_SIGN_ENTITLEMENTS = "TemplateProject-macOS.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				DSTROOT = "$(APP_PATH)";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
